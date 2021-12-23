@@ -1,0 +1,36 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  height: 100%;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN */
+.main-content {
+  flex-grow: 1;
+}
