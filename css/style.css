@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box;
 }
+*:focus {
+  outline: 3px dotted #EA625C;
+  outline-offset: 3px dotted;
+}
 
 html {
   height: 100%;
@@ -14,8 +18,8 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 15px;
+  line-height: 24px;
   letter-spacing: 2px;
   height: 100%;
 }
@@ -29,8 +33,235 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/* SITE HEADER */
+.site-header {
+  padding: 30px;
+  /* position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10; */
+}
+/* NAVIGATION */
+.sitenav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+/* SEARCH */
+.sitenav >input {
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 153px;
+  padding: 6px;
+  margin-left: 40px;
+}
+
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+.site-header-logo:active {
+  opacity: 0.6;
+}
+.sitenav-list {
+  display: flex;
+  margin-left: auto;
+}
+.sitenav-item {
+  list-style-type: none;
+}
+.sitenav-item:not(:last-child){
+  margin-right: 30px;
+}
+.sitenav-link {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+.sitenav-link:hover {
+  opacity: 0.8;
+}
+.sitenav-link:active {
+  opacity: 0.6;
+}
+.site-header-info {
+  display: flex;
+}
+.site-header-calls-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+  margin-top: 170px;
+  margin-bottom: 30px;
+}
+.site-header-calls-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #777777;
+  border-left: 3px solid #888888;
+  padding-left: 40px;
+}
+
+/* BUTTON */
+
+.site-header-calls-link {
+  text-decoration: none;
+}
+.main-button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 42px;
+  background-color: #EA625C;
+  padding: 12px 38.5px;
+  width: 280px;
+  text-align: center;
+}
+.main-button:hover {
+  opacity: 0.8;
+}
+.main-button:active {
+  opacity: 0.6;
+}
+/* APPLE WATCH */
+.site-header-img {
+  margin-top: 86px;
+  margin-left: auto;
+}
 
 /* MAIN */
 .main-content {
+  /* flex-grow: 1; */
+}
+.main-content-list {
+
+}
+.main-content-action {
+  margin-left: -40px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-item {
+  list-style-type: none;
+}
+.main-content-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #222222;
+  margin-top: 68px;
+  margin-bottom: 30px;
+}
+.main-content-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.rectangle {
+  display: flex;
+}
+.rectangle:hover {
+  opacity: 0.8;
+}
+.rectangle:active {
+  opacity: 0.6;
+}
+.square {
+  width: 8px;
+  height: 8px;
+  background-color: #DDDDDD;
+}
+.square:not(:last-child){
+  margin-right: 10px;
+}
+.learn-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.learn-link:hover {
+  opacity: 0.8;
+}
+.learn-link:active {
+  opacity: 0.6;
+}
+.hero {
+  width: 40px;
+  height: 3px;
+  background-color: #EA625C;
+}
+.learn {
+  color: #EA625C;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.main-content-action-sport {
+  display: flex;
+}
+
+.main-content-sport-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 246px;
+  margin-bottom: 30px;
+}
+.main-content-sport-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  border-left: 3px solid #888888;
+  padding-left: 40px;
+}
+.main-content-sport-button {
+  width: 260px;
+}
+.main-content-sport-img {
+  margin-left: auto;
+  margin-top: 140px;
+}
+
+.site-footer {
   flex-grow: 1;
+  width: 100%;
+  background-image: url('/img/runners\ 1.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  object-fit: cover;
+  margin-top: 70px;
+}
+.site-footer-info {
+  margin-left: 580px;
+  margin-top: 240px;
+}
+.site-footer-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.site-footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-left: 3px solid #ffffff;
+  padding-left: 40px;
+}
+.site-footer-button {
+  margin-bottom: 240px;
 }
